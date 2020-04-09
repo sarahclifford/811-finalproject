@@ -1,0 +1,12 @@
+---
+title: "Project Goals"
+author: "Sarah Clifford"
+date: "4/2/2020"
+output: pdf_document
+---
+
+Within this project folder, I hope to establish a well-organized system for cleaning and analyzing the data for my thesis project. At this point in the semester, it does not look like I'll have data available to start cleaning/manipulating (preparing my survey for IRB submission now). 
+
+Therefore, I plan on using data from my research group on attitudes toward human gene editing to ensure I can perform some of the organizational tasks with real data. In particular, I hope to manipulate a couple of variables and run a regression. I plan on using public support for gene editing therapy applications as my DV, and demographics, values, & trust in science professionals as my IVs. I previous compared these metrics and used SPSS, so I'm especially curious how my workflow and analysis will improve by using the project management skills in this class.
+
+
