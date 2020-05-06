@@ -1,0 +1,101 @@
+---
+title: "Vaccine Hesitancy: Understanding Parental Attitudes Towards Childhood Vaccines"
+author: Sarah Clifford, MPH
+
+date: |
+  `r format(Sys.time(), '%B %d, %Y')`
+abstract: |
+  This research investigates what factors influence parents' risk and benefit perceptions of childhood vaccination. While vaccine debates commonly view two sides on the issue- pro-vaccinators and anti-vaxxers- this study looks at the breadth of vaccine hesitancies. Specifically, it analyzes how prevalent hesitant attitudes towards childhood vaccination are in a study population who have previously engaged in community public health surveillance research. By looking at individual vaccines given in childhood, this research demonstrates the spectrum of perceived risks and benefits that exist towards vaccines. Using a multi-method approach, consisting of focus groups and surveys, the study adds to a discussion on how to address vaccine hesitancy and improve public health messaging. By conducting this research during the COVID-19 pandemic, there is added insight as to how such a phenomenon, and media attention, influences attitudes towards vaccination and infectious diseases more generally.
+
+geometry: margin = 1.15in         
+fontsize: 12pt                        
+bibliography: references.bib            
+biblio-style: 'apa'                    
+urlcolor: blue                         
+citecolor: black                      
+linkcolor: magenta                     
+indent: true   
+text-align: justify
+
+output: 
+  bookdown::pdf_document2:
+    keep_tex: true
+    latex_engine: pdflatex
+    number_sections: true
+    toc: true
+    fig_caption: true
+    citation_package: biblatex
+  bookdown::html_document2: default
+  bookdown::word_document2:
+    toc: true
+---
+
+# Introduction
+
+For decades, the United States have used vaccinations as a standard public health practice to prevent the spread of infectious disease. Many vaccines recommended by the Centers for Disease Control and Prevention (CDC) are intended to be received in childhood. As new vaccines are developed, the list of recommended and mandated immunizations for a child entering school is growing. This increase in required childhood vaccinations leaves many parents skeptical and has in part fueled discussions on the lack of safety of vaccines. Social media has provided a forum for parents to exchange misinformation on the perceived risks of childhood vaccination, including concerns over toxic additives, negative health effects, poor efficacy, cross-reactivity, and the underlying interests of pharmaceutical companies. Parents with such beliefs in the growing movement of vaccine hesitancies and negative sentiments are often termed, “anti-vaxxers” or “vaccine resistant.” Often, these parents come from a variety of backgrounds, including the anti-government libertarians who do not like government mandating medical decisions, as well as the natural health gurus who prefer natural means for acquiring immunity.
+
+The growing dissent surrounding childhood vaccination is often seen as a product of vaccines’ efficacy; meaning, their ability to provide acquired immunity to infectious diseases allows people to no longer feel the threat of such illnesses. The perceived risk of a vaccine side effect becomes much more tangible than the threat of a disease no longer seen in the US. These harmful sentiments have sparked recent outbreaks of previously controlled diseases like measles. In 2019, the US saw the greatest number of measles cases reported since 1992 [@patel2019:measles]. Most of these cases occurred in unvaccinated populations who either were not vaccinated due to religious convictions or opting out with a personal waiver.
+
+While vaccination rates remain high amongst the general US population, pockets of outbreaks pose concern as vaccine misinformation continues to spread. Debates over the allowance of personal conviction waivers have continued at state levels. Currently, Wisconsin is one of 18 states that allow parents to exempt their children from vaccination due to personal conviction. Other states only allow medical or religious exemptions [@carlson2019:conviction].  Among children entering kindergarten, the number of unvaccinated students with personal conviction waivers is rising in Wisconsin and is now above the national average [@carlson2019:conviction]. The group, Wisconsin United for Freedom, has been opposing legislation related to childhood immunizations with their primary goal being to maintain a parent’s right to choose. 
+In the wake of the COVID-19 coronavirus outbreak, vaccine opponents have continued to voice concerns over an impending COVID-19 vaccine. Similar to existing opposition, vaccine skeptics cite distrust in government and rushed safety trials as some of their primary concerns [dupuy2020:covidvax]. Online misinformation continues to circulate and further cloud scientific consensus on the safety and effectiveness of vaccines.
+
+This research looks to understand what risks and benefits parents perceive with childhood vaccinations. In the current media landscape, there is a wide breadth of “pro” and “anti” vaccine attitudes. Here, I consider how prevailing vaccine skepticisms affect parents’ decision making about vaccinating their children. Using a population of parents in Oregon, Wisconsin as my study sample, I use a multi-methods approach to tease apart the “pro-vaccine” versus “anti-vaccine” debate into the spectrum of hesitancies that exist for a variety of childhood vaccinations. 
+
+# Literature Review
+
+## The Rise of Misinformation
+
+- Despite reasonable, justified perceptions of reality, individual observations can be inconsistent with the truth [@scheufele2019:misinformation; @turri2012:knowledge]
+-	Cognitive dissonance: avoidance leads to biased perceptions and information processing that complicates the recognition & rejection of falsehoods [@festinger1957:dissonance]
+- People relying on “intuition” to assess factual claims than conscious reasoning skills [@garrett2017:epistemic]
+- Low media literacy [@lazer2018:fakenews]
+- Conspiratorial beliefs [@uscinski2016:conspiracy]
+
+## Influence of Social Media
+
+- Social media is an important platform for news consumption [@perrin2019:fbuse; @brossard2013:socialmedia]
+- Fake news & Facebook's attempt to limit misinformation [@vosoughi2018:fakenews]
+- Time spent on social platforms
+- Echo chambers: algorithms on Facebook make it such that people see posts that reinforce their own ideologies [@isaac2018:facebook]
+- People more are more inclined to share information that has an emotion impact, in this case, sharing stories of vaccine side effects instead of disease effects [@milkman2014:sharing]
+
+## Media Attention
+
+-	Motivational reasoning: goal-directed processing of information to protect existing beliefs [@kunda1990:motivated] and not trust scientific evidence [@kraft2015:motivatedscience]
+- Biased assimilation & attitude polarization [@lord1979:biased]
+-	People become further entrenched in their own opinions when presented contrary information [@nyhan2010:corrections]
+- "Backfire effect:" ideological commitments are more important that evidence [@wood2016:backfire]
+
+## Perceptions of Childhood Vaccination
+- Concern of "overloading" the immune system with multiple vaccinations at once [@hilton2006:combinedvax]
+- Overestimate rare side effects, underestimate disease [@macdonald2012:vaxrisk]
+
+### HPV Vaccine
+- Concerns over vaccine safety (publicized side effects) and that vaccination will result in children initiating sexual behavior at a younger age [@zimet2013:hpv]
+
+### Influenza Vaccine
+- Parents do not view the flu vaccine as effective at preventing disease [@cooper2011:flu]
+- There are concerns over adverse side effects [@hart2019:flueffects]
+
+## Education Level
+
+## Trust & Confidence
+
+- Heuristic information processing means people rely on inherent trust and values to make judgements [@scheufele2005:heuristic]
+- People trust scientists & medical professionals on science-related topics [@einsiedel1994:mentalmap; @sjoberg2002:techattitudes]
+- Among young mothers, trust in physician is important for vaccine decision making [@benin2006:mothertrust]
+
+## Ideology
+
+- Political views [@scheufele2014:political]
+- Religious views (vaccine exemptions due to ideology) [@allum2008:values; @brossard2007:deference]
+
+# Research Questions
+
+1. How do risk/benefit perceptions vary across childhood vaccinations?
+2. How does attention to health topics in the media influence vaccine hesitancy?
+
+
+
+
+

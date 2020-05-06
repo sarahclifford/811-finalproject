@@ -1,0 +1,223 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[12pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Vaccine Hesitancy: Understanding Parental Attitudes Towards Childhood Vaccines},
+            pdfauthor={Sarah Clifford, MPH},
+            colorlinks=true,
+            linkcolor=magenta,
+            filecolor=Maroon,
+            citecolor=black,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin = 1.15in]{geometry}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[style=apa,]{biblatex}
+\addbibresource{references.bib}
+
+\title{Vaccine Hesitancy: Understanding Parental Attitudes Towards Childhood Vaccines}
+\author{Sarah Clifford, MPH}
+\date{May 06, 2020}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This research investigates what factors influence parents' risk and benefit perceptions of childhood vaccination. While vaccine debates commonly view two sides on the issue- pro-vaccinators and anti-vaxxers- this study looks at the breadth of vaccine hesitancies. Specifically, it analyzes how prevalent hesitant attitudes towards childhood vaccination are in a study population who have previously engaged in community public health surveillance research. By looking at individual vaccines given in childhood, this research demonstrates the spectrum of perceived risks and benefits that exist towards vaccines. Using a multi-method approach, consisting of focus groups and surveys, the study adds to a discussion on how to address vaccine hesitancy and improve public health messaging. By conducting this research during the COVID-19 pandemic, there is added insight as to how such a phenomenon, and media attention, influences attitudes towards vaccination and infectious diseases more generally.
+\end{abstract}
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+For decades, the United States have used vaccinations as a standard public health practice to prevent the spread of infectious disease. Many vaccines recommended by the Centers for Disease Control and Prevention (CDC) are intended to be received in childhood. As new vaccines are developed, the list of recommended and mandated immunizations for a child entering school is growing. This increase in required childhood vaccinations leaves many parents skeptical and has in part fueled discussions on the lack of safety of vaccines. Social media has provided a forum for parents to exchange misinformation on the perceived risks of childhood vaccination, including concerns over toxic additives, negative health effects, poor efficacy, cross-reactivity, and the underlying interests of pharmaceutical companies. Parents with such beliefs in the growing movement of vaccine hesitancies and negative sentiments are often termed, ``anti-vaxxers'' or ``vaccine resistant.'' Often, these parents come from a variety of backgrounds, including the anti-government libertarians who do not like government mandating medical decisions, as well as the natural health gurus who prefer natural means for acquiring immunity.
+
+The growing dissent surrounding childhood vaccination is often seen as a product of vaccines' efficacy; meaning, their ability to provide acquired immunity to infectious diseases allows people to no longer feel the threat of such illnesses. The perceived risk of a vaccine side effect becomes much more tangible than the threat of a disease no longer seen in the US. These harmful sentiments have sparked recent outbreaks of previously controlled diseases like measles. In 2019, the US saw the greatest number of measles cases reported since 1992 \autocite{patel2019:measles}. Most of these cases occurred in unvaccinated populations who either were not vaccinated due to religious convictions or opting out with a personal waiver.
+
+While vaccination rates remain high amongst the general US population, pockets of outbreaks pose concern as vaccine misinformation continues to spread. Debates over the allowance of personal conviction waivers have continued at state levels. Currently, Wisconsin is one of 18 states that allow parents to exempt their children from vaccination due to personal conviction. Other states only allow medical or religious exemptions \autocite{carlson2019:conviction}. Among children entering kindergarten, the number of unvaccinated students with personal conviction waivers is rising in Wisconsin and is now above the national average \autocite{carlson2019:conviction}. The group, Wisconsin United for Freedom, has been opposing legislation related to childhood immunizations with their primary goal being to maintain a parent's right to choose.
+In the wake of the COVID-19 coronavirus outbreak, vaccine opponents have continued to voice concerns over an impending COVID-19 vaccine. Similar to existing opposition, vaccine skeptics cite distrust in government and rushed safety trials as some of their primary concerns {[}dupuy2020:covidvax{]}. Online misinformation continues to circulate and further cloud scientific consensus on the safety and effectiveness of vaccines.
+
+This research looks to understand what risks and benefits parents perceive with childhood vaccinations. In the current media landscape, there is a wide breadth of ``pro'' and ``anti'' vaccine attitudes. Here, I consider how prevailing vaccine skepticisms affect parents' decision making about vaccinating their children. Using a population of parents in Oregon, Wisconsin as my study sample, I use a multi-methods approach to tease apart the ``pro-vaccine'' versus ``anti-vaccine'' debate into the spectrum of hesitancies that exist for a variety of childhood vaccinations.
+
+\hypertarget{literature-review}{%
+\section{Literature Review}\label{literature-review}}
+
+\hypertarget{the-rise-of-misinformation}{%
+\subsection{The Rise of Misinformation}\label{the-rise-of-misinformation}}
+
+\begin{itemize}
+\tightlist
+\item
+  Despite reasonable, justified perceptions of reality, individual observations can be inconsistent with the truth \autocites{scheufele2019:misinformation}{turri2012:knowledge}
+\item
+  Cognitive dissonance: avoidance leads to biased perceptions and information processing that complicates the recognition \& rejection of falsehoods \autocite{festinger1957:dissonance}
+\item
+  People relying on ``intuition'' to assess factual claims than conscious reasoning skills \autocite{garrett2017:epistemic}
+\item
+  Low media literacy \autocite{lazer2018:fakenews}
+\item
+  Conspiratorial beliefs \autocite{uscinski2016:conspiracy}
+\end{itemize}
+
+\hypertarget{influence-of-social-media}{%
+\subsection{Influence of Social Media}\label{influence-of-social-media}}
+
+\begin{itemize}
+\tightlist
+\item
+  Social media is an important platform for news consumption \autocites{perrin2019:fbuse}{brossard2013:socialmedia}
+\item
+  Fake news \& Facebook's attempt to limit misinformation \autocite{vosoughi2018:fakenews}
+\item
+  Time spent on social platforms
+\item
+  Echo chambers: algorithms on Facebook make it such that people see posts that reinforce their own ideologies \autocite{isaac2018:facebook}
+\item
+  People more are more inclined to share information that has an emotion impact, in this case, sharing stories of vaccine side effects instead of disease effects \autocite{milkman2014:sharing}
+\end{itemize}
+
+\hypertarget{media-attention}{%
+\subsection{Media Attention}\label{media-attention}}
+
+\begin{itemize}
+\tightlist
+\item
+  Motivational reasoning: goal-directed processing of information to protect existing beliefs \autocite{kunda1990:motivated} and not trust scientific evidence \autocite{kraft2015:motivatedscience}
+\item
+  Biased assimilation \& attitude polarization \autocite{lord1979:biased}
+\item
+  People become further entrenched in their own opinions when presented contrary information \autocite{nyhan2010:corrections}
+\item
+  ``Backfire effect:'' ideological commitments are more important that evidence \autocite{wood2016:backfire}
+\end{itemize}
+
+\hypertarget{perceptions-of-childhood-vaccination}{%
+\subsection{Perceptions of Childhood Vaccination}\label{perceptions-of-childhood-vaccination}}
+
+\begin{itemize}
+\tightlist
+\item
+  Concern of ``overloading'' the immune system with multiple vaccinations at once \autocite{hilton2006:combinedvax}
+\item
+  Overestimate rare side effects, underestimate disease \autocite{macdonald2012:vaxrisk}
+\end{itemize}
+
+\hypertarget{hpv-vaccine}{%
+\subsubsection{HPV Vaccine}\label{hpv-vaccine}}
+
+\begin{itemize}
+\tightlist
+\item
+  Concerns over vaccine safety (publicized side effects) and that vaccination will result in children initiating sexual behavior at a younger age \autocite{zimet2013:hpv}
+\end{itemize}
+
+\hypertarget{influenza-vaccine}{%
+\subsubsection{Influenza Vaccine}\label{influenza-vaccine}}
+
+\begin{itemize}
+\tightlist
+\item
+  Parents do not view the flu vaccine as effective at preventing disease \autocite{cooper2011:flu}
+\item
+  There are concerns over adverse side effects \autocite{hart2019:flueffects}
+\end{itemize}
+
+\hypertarget{education-level}{%
+\subsection{Education Level}\label{education-level}}
+
+\hypertarget{trust-confidence}{%
+\subsection{Trust \& Confidence}\label{trust-confidence}}
+
+\begin{itemize}
+\tightlist
+\item
+  Heuristic information processing means people rely on inherent trust and values to make judgements \autocite{scheufele2005:heuristic}
+\item
+  People trust scientists \& medical professionals on science-related topics \autocites{einsiedel1994:mentalmap}{sjoberg2002:techattitudes}
+\item
+  Among young mothers, trust in physician is important for vaccine decision making \autocite{benin2006:mothertrust}
+\end{itemize}
+
+\hypertarget{ideology}{%
+\subsection{Ideology}\label{ideology}}
+
+\begin{itemize}
+\tightlist
+\item
+  Political views \autocite{scheufele2014:political}
+\item
+  Religious views (vaccine exemptions due to ideology) \autocites{allum2008:values}{brossard2007:deference}
+\end{itemize}
+
+\hypertarget{research-questions}{%
+\section{Research Questions}\label{research-questions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  How do risk/benefit perceptions vary across childhood vaccinations?
+\item
+  How does attention to health topics in the media influence vaccine hesitancy?
+\end{enumerate}
+
+\printbibliography
+
+\end{document}
